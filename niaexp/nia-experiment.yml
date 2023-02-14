@@ -1,0 +1,10 @@
+---
+{
+  "name": "Nia experiment",
+  "description": "NiaPy test suite",
+  "version": 0.1,
+  "last_revision": 21.1.2023,
+  "datasets": ["https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data", "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data", "https://raw.githubusercontent.com/lukapecnik/NiaClass/master/examples/example_files/dataset.csv"],
+  "repositories": ["https://gitlab.com/firefly-cpp/nia-test-experiments"],
+  "scripts": [ {name: script1, lang: :python, command: run.py}, {name: script2, lang: :python, command: nia-test-experiments/src/niapy_pso.py} ]
+}
