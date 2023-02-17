@@ -1,10 +1,25 @@
----
-{
-  "name": "Nia experiment",
-  "description": "NiaPy test suite",
-  "version": 0.1,
-  "last_revision": 21.1.2023,
-  "datasets": ["https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data", "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data", "https://raw.githubusercontent.com/lukapecnik/NiaClass/master/examples/example_files/dataset.csv"],
-  "repositories": ["https://gitlab.com/firefly-cpp/nia-test-experiments"],
-  "scripts": [ {name: script1, lang: :python, command: run.py}, {name: script2, lang: :python, command: nia-test-experiments/src/niapy_pso.py} ]
-}
+name: Nia experiment
+description: NiaPy test suite
+version: 0.1
+last_revision: 16.2.2023
+datasets:
+  - url: >-
+      https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data
+    hash: de37cdcdcaaa50c309d514f248f7c2302a5f1f88c168905eba23fe2fbc78449f
+  - url: 'https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data'
+    hash: 6be6b1203f3d51df0b553a70e57b8a723cd405683958204f96d23d7cd6aea659
+  - url: >-
+      https://raw.githubusercontent.com/lukapecnik/NiaClass/master/examples/example_files/dataset.csv
+    hash: 506a7faf88b6a57a7156aba3993ee131cb6fe34d8d8137c1d7904c380b73c426
+repositories:
+  - 'https://gitlab.com/firefly-cpp/nia-test-experiments'
+scripts:
+  - name: script1
+    lang: ':python'
+    command: nia-test-experiments/src/niapy_custom_problem.py
+  - name: script2
+    lang: ':python'
+    command: nia-test-experiments/src/niapy_pso.py
+  - name: script3
+    lang: ':bash'
+    command: nia-test-experiments/run.sh
